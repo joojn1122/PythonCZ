@@ -3,7 +3,7 @@ Python but in Czech language.
 
 *Requirement = Python3*
 
-I know it's so made badly af, but i was just bored XD
+I know it's made badly af, but i was just bored XD
 
 
 Doc:
