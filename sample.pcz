@@ -1,0 +1,44 @@
+text = vstup("Závorky: ")
+aktuální je nic
+zavorky je list
+pravda je Pravda
+
+
+funkce error(i):
+	vypiš(f"[{int(i)+1}] Nepravda")
+	veřejný pravda
+	pravda je Nepravda
+
+pro i v rozsah(délka(text)):
+	zkus:
+		x je text[i]
+		pokud x bude "[":
+			zavorky.přidej("[")
+		takypokud x bude "{":
+			zavorky.přidej("{")
+		takypokud x bude "(":
+			zavorky.přidej("(")
+
+		takypokud x bude "]":
+			pokud zavorky[délka(zavorky)-1] bude "[":
+				zavorky je zavorky[:-1]
+			jinak:
+				error(i)
+				zruš
+		takypokud x bude "}":
+			pokud zavorky[délka(zavorky)-1] bude "{":
+				zavorky je zavorky[:-1]
+			jinak:
+				error(i)
+				zruš
+		takypokud x bude ")":
+			pokud zavorky[délka(zavorky)-1] bude "(":
+				zavorky je zavorky[:-1]
+			jinak:
+				error(i)
+				zruš
+	chyť chybu jako e:
+		error(i)
+		zruš
+pokud pravda:
+	vypiš(Pravda)
