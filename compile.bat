@@ -1,1 +1,1 @@
-python compiler.py sample.pcz :: replace your file with sample.pcz
+python compiler.py sample.pcz :: replace sample.pcz with your file 
